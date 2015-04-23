@@ -1,8 +1,57 @@
 require 'rails_helper'
 
 describe Contact do
-  it "has a valid factory" do
-    expect(build(:contact)).to be_valid
+  it " is valid with a firstname, lastname and email"
+  it " is invalid without a firstname"
+  it " is invalid without a lastname"
+  it " is invalid without an email address"
+  it " is invalid with a duplicate email address"
+  it " returns a contact's full name as a string"
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ expect(build(:contact)).to be_valid
   end
 
   it { is_expected.to validate_presence_of :firstname }
